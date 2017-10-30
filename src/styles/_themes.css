@@ -1,0 +1,277 @@
+/* auto generated do not modify.  see Rakefile */
+.highlight-dark-red {
+  background-color: var(--dark-red, #e7040f);
+  color: var(--near-white, #ddd);
+}
+.card-dark-red {
+  border-color: var(--dark-red, #e7040f);
+}
+.card-dark-red header {
+  background-color: var(--dark-red, #e7040f);
+  color: var(--near-white, #ddd);
+}
+.highlight-red {
+  background-color: var(--red, #ff4136);
+  color: var(--near-black, #222);
+}
+.card-red {
+  border-color: var(--red, #ff4136);
+}
+.card-red header {
+  background-color: var(--red, #ff4136);
+  color: var(--near-black, #222);
+}
+.highlight-light-red {
+  background-color: var(--light-red, #ff725c);
+  color: var(--near-black, #222);
+}
+.card-light-red {
+  border-color: var(--light-red, #ff725c);
+}
+.card-light-red header {
+  background-color: var(--light-red, #ff725c);
+  color: var(--near-black, #222);
+}
+.highlight-orange {
+  background-color: var(--orange, #ff6300);
+  color: var(--near-black, #222);
+}
+.card-orange {
+  border-color: var(--orange, #ff6300);
+}
+.card-orange header {
+  background-color: var(--orange, #ff6300);
+  color: var(--near-black, #222);
+}
+.highlight-gold {
+  background-color: var(--gold, #ffb700);
+  color: var(--near-black, #222);
+}
+.card-gold {
+  border-color: var(--gold, #ffb700);
+}
+.card-gold header {
+  background-color: var(--gold, #ffb700);
+  color: var(--near-black, #222);
+}
+.highlight-yellow {
+  background-color: var(--yellow, #ffd700);
+  color: var(--near-black, #222);
+}
+.card-yellow {
+  border-color: var(--yellow, #ffd700);
+}
+.card-yellow header {
+  background-color: var(--yellow, #ffd700);
+  color: var(--near-black, #222);
+}
+.highlight-light-yellow {
+  background-color: var(--light-yellow, #fbf1a9);
+  color: var(--near-black, #222);
+}
+.card-light-yellow {
+  border-color: var(--light-yellow, #fbf1a9);
+}
+.card-light-yellow header {
+  background-color: var(--light-yellow, #fbf1a9);
+  color: var(--near-black, #222);
+}
+.highlight-purple {
+  background-color: var(--purple, #5e2ca5);
+  color: var(--near-white, #ddd);
+}
+.card-purple {
+  border-color: var(--purple, #5e2ca5);
+}
+.card-purple header {
+  background-color: var(--purple, #5e2ca5);
+  color: var(--near-white, #ddd);
+}
+.highlight-light-purple {
+  background-color: var(--light-purple, #a463f2);
+  color: var(--near-black, #222);
+}
+.card-light-purple {
+  border-color: var(--light-purple, #a463f2);
+}
+.card-light-purple header {
+  background-color: var(--light-purple, #a463f2);
+  color: var(--near-black, #222);
+}
+.highlight-dark-pink {
+  background-color: var(--dark-pink, #d5008f);
+  color: var(--near-black, #222);
+}
+.card-dark-pink {
+  border-color: var(--dark-pink, #d5008f);
+}
+.card-dark-pink header {
+  background-color: var(--dark-pink, #d5008f);
+  color: var(--near-black, #222);
+}
+.highlight-hot-pink {
+  background-color: var(--hot-pink, #ff41b4);
+  color: var(--near-black, #222);
+}
+.card-hot-pink {
+  border-color: var(--hot-pink, #ff41b4);
+}
+.card-hot-pink header {
+  background-color: var(--hot-pink, #ff41b4);
+  color: var(--near-black, #222);
+}
+.highlight-pink {
+  background-color: var(--pink, #ff80cc);
+  color: var(--near-black, #222);
+}
+.card-pink {
+  border-color: var(--pink, #ff80cc);
+}
+.card-pink header {
+  background-color: var(--pink, #ff80cc);
+  color: var(--near-black, #222);
+}
+.highlight-light-pink {
+  background-color: var(--light-pink, #ffa3d7);
+  color: var(--near-black, #222);
+}
+.card-light-pink {
+  border-color: var(--light-pink, #ffa3d7);
+}
+.card-light-pink header {
+  background-color: var(--light-pink, #ffa3d7);
+  color: var(--near-black, #222);
+}
+.highlight-dark-green {
+  background-color: var(--dark-green, #137752);
+  color: var(--near-white, #ddd);
+}
+.card-dark-green {
+  border-color: var(--dark-green, #137752);
+}
+.card-dark-green header {
+  background-color: var(--dark-green, #137752);
+  color: var(--near-white, #ddd);
+}
+.highlight-green {
+  background-color: var(--green, #19a974);
+  color: var(--near-black, #222);
+}
+.card-green {
+  border-color: var(--green, #19a974);
+}
+.card-green header {
+  background-color: var(--green, #19a974);
+  color: var(--near-black, #222);
+}
+.highlight-light-green {
+  background-color: var(--light-green, #9eebcf);
+  color: var(--near-black, #222);
+}
+.card-light-green {
+  border-color: var(--light-green, #9eebcf);
+}
+.card-light-green header {
+  background-color: var(--light-green, #9eebcf);
+  color: var(--near-black, #222);
+}
+.highlight-navy {
+  background-color: var(--navy, #001b44);
+  color: var(--near-white, #ddd);
+}
+.card-navy {
+  border-color: var(--navy, #001b44);
+}
+.card-navy header {
+  background-color: var(--navy, #001b44);
+  color: var(--near-white, #ddd);
+}
+.highlight-dark-blue {
+  background-color: var(--dark-blue, #00449e);
+  color: var(--near-white, #ddd);
+}
+.card-dark-blue {
+  border-color: var(--dark-blue, #00449e);
+}
+.card-dark-blue header {
+  background-color: var(--dark-blue, #00449e);
+  color: var(--near-white, #ddd);
+}
+.highlight-blue {
+  background-color: var(--blue, #357edd);
+  color: var(--near-white, #ddd);
+}
+.card-blue {
+  border-color: var(--blue, #357edd);
+}
+.card-blue header {
+  background-color: var(--blue, #357edd);
+  color: var(--near-white, #ddd);
+}
+.highlight-light-blue {
+  background-color: var(--light-blue, #96ccff);
+  color: var(--near-black, #222);
+}
+.card-light-blue {
+  border-color: var(--light-blue, #96ccff);
+}
+.card-light-blue header {
+  background-color: var(--light-blue, #96ccff);
+  color: var(--near-black, #222);
+}
+.highlight-lightest-blue {
+  background-color: var(--lightest-blue, #cdecff);
+  color: var(--near-black, #222);
+}
+.card-lightest-blue {
+  border-color: var(--lightest-blue, #cdecff);
+}
+.card-lightest-blue header {
+  background-color: var(--lightest-blue, #cdecff);
+  color: var(--near-black, #222);
+}
+.highlight-washed-blue {
+  background-color: var(--washed-blue, #f6fffe);
+  color: var(--near-black, #222);
+}
+.card-washed-blue {
+  border-color: var(--washed-blue, #f6fffe);
+}
+.card-washed-blue header {
+  background-color: var(--washed-blue, #f6fffe);
+  color: var(--near-black, #222);
+}
+.highlight-washed-green {
+  background-color: var(--washed-green, #e8fdf5);
+  color: var(--near-black, #222);
+}
+.card-washed-green {
+  border-color: var(--washed-green, #e8fdf5);
+}
+.card-washed-green header {
+  background-color: var(--washed-green, #e8fdf5);
+  color: var(--near-black, #222);
+}
+.highlight-washed-yellow {
+  background-color: var(--washed-yellow, #fffceb);
+  color: var(--near-black, #222);
+}
+.card-washed-yellow {
+  border-color: var(--washed-yellow, #fffceb);
+}
+.card-washed-yellow header {
+  background-color: var(--washed-yellow, #fffceb);
+  color: var(--near-black, #222);
+}
+.highlight-washed-red {
+  background-color: var(--washed-red, #ffdfdf);
+  color: var(--near-black, #222);
+}
+.card-washed-red {
+  border-color: var(--washed-red, #ffdfdf);
+}
+.card-washed-red header {
+  background-color: var(--washed-red, #ffdfdf);
+  color: var(--near-black, #222);
+}
+

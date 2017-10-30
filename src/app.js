@@ -1,3 +1,3 @@
-window.alert('Hello There!');
+import './styles/app.css';
 
 export const greeting = 'Hi There';
