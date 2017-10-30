@@ -9,6 +9,4 @@ html, body, #app {
   background-color: var(--light-blue); /* .bg-green */
   margin: var(--spacing-none); /* .ma0 */
   padding: var(--spacing-none); /* .pa0 */
-
-
 }
