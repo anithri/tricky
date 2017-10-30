@@ -1,0 +1,42 @@
+{
+  "name": "tricky",
+  "version": "0.1.0",
+  "description": "Trick Taking Game",
+  "main": "index.js",
+  "repository": "https://github.com/anithri/tricky",
+  "author": "Scott M Parrish",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "start": "webpack-dev-server",
+    "pretty": "prettier --write --single-quote \"{src,test}/**/*.js\" ",
+    "lint": "eslint ./src ./test"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-env": "^2.4.1",
+    "babel-eslint": "^8.0.1",
+    "babel-jest": "^21.2.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-react": "^6.24.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.10.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.4.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "html-webpack-plugin": "^2.30.1",
+    "jest": "^21.2.1",
+    "jest-cli": "^21.2.1",
+    "prettier": "^1.7.4",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.3"
+  },
+  "dependencies": {
+    "prettier-cli": "^0.1.0"
+  }
+}

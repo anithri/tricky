@@ -1,0 +1,35 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "standard",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/react",
+    "prettier/standard"
+  ],
+  "plugins": [
+    "react",
+    "prettier",
+    "standard"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+  },
+  "rules": {
+    "indent": [2, 2, {"SwitchCase": 1}],
+    "quotes": [2, "single", {"avoidEscape": true}],
+    "linebreak-style": [2, "unix"],
+    "semi": [2, "always"],
+    "no-console": [0],
+    "prettier/prettier": ["error", { "singleQuote": true }]
+  }
+}
+
