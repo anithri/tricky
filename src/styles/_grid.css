@@ -1,0 +1,7 @@
+.gridContainer {
+  display: grid;
+  grid-gap: var(--spacing-small);
+  & > * {
+    padding: var(--spacing-small);
+  }
+}

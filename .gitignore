@@ -5,3 +5,6 @@ coverage/
 tmp/
 .reduxrc
 yarn-error.log
+build/
+^.gitkeep
+

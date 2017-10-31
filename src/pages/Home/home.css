@@ -1,0 +1,20 @@
+.home {
+  composes: gridContainer from global;
+  composes: max from global;
+  grid-template-columns: 1fr;
+  grid-template-rows: var(--spacing-large) 1fr;
+  grid-template-areas: "homeHeader" "homeMain";
+  background-color: var(--gold); /* .bg-gold */
+
+  & > header {
+    grid-area: homeHeader;
+    padding-top: var(--spacing-none); /* .pv0 */
+    padding-bottom: var(--spacing-none);
+    background-color: var(--dark-gray); /* .bg-dark-gray */
+    color: var(--near-white); /* .near-white */
+  }
+
+  & > main {
+    grid-area: homeMain;
+  }
+}

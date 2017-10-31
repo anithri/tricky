@@ -1,7 +1,9 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+
 const path = require('path');
 const buildDir = path.resolve(process.cwd(), 'build');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const CSSWebpackPluginConfig = new ExtractTextPlugin("[name].css");
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: './src/index.html',
   filename: path.resolve(buildDir, 'index.html'),
@@ -9,13 +11,13 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 
 module.exports = {
-  entry: './src/app.js',
+  entry: './src/index.js',
   output: {
     path: buildDir,
-    filename: 'app.bundle.js'
+    filename: 'index.bundle.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?$/,
         loader: 'babel-loader',
@@ -24,44 +26,42 @@ module.exports = {
       {
         test: /styles\/.*\.css$/,
         exclude: /build|node_modules/,
-        use: [
-          {
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1,
-            }
-          },
-          {
-            loader: 'postcss-loader'
-          }
-        ]
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                sourceMap: true,
+                importLoaders: 1,
+              }
+            },
+            {loader: 'postcss-loader', options: {sourceMap: true}}
+          ]
+        })
       },
       {
         test: /\.css$/,
         exclude: /build|node_modules|src\/styles/,
-        use: [
-          {
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true,
-              importLoaders: 2,
-              sourceMap: true,
-              localIdentName: '[name]_[local]_[hash:base64:5]'
-            }
-          },
-          {
-            loader: 'postcss-loader'
-          }
-        ]
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                // minimize: env.NODE_ENV === 'production',
+                modules: true,
+                sourceMap: true,
+                importLoaders: 1,
+                localIdentName: '[name]_[local]_[hash:base64:5]'
+              }
+            },
+            {loader: 'postcss-loader', options: {sourceMap: true}}
+          ]
+        })
       }
     ]
   },
-  plugins: [HtmlWebpackPluginConfig]
+  plugins: [HtmlWebpackPluginConfig, CSSWebpackPluginConfig]
 };
 

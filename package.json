@@ -39,11 +39,17 @@
     "postcss-loader": "^2.0.8",
     "prettier": "^1.7.4",
     "style-loader": "^0.19.0",
+    "stylelint": "^8.2.0",
     "tachyons-custom": "^4.9.0",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.3"
   },
   "dependencies": {
-    "prettier-cli": "^0.1.0"
+    "postcss-smart-import": "^0.7.5",
+    "prettier-cli": "^0.1.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router": "^4.2.0",
+    "react-router-redux": "^4.0.8"
   }
 }
