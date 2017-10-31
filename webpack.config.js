@@ -3,7 +3,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const path = require('path');
 const buildDir = path.resolve(process.cwd(), 'build');
-const CSSWebpackPluginConfig = new ExtractTextPlugin("[name].css");
+const CSSWebpackPluginConfig = new ExtractTextPlugin("application.css");
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: './src/index.html',
   filename: path.resolve(buildDir, 'index.html'),
@@ -14,7 +14,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: buildDir,
-    filename: 'index.bundle.js'
+    filename: 'application.js'
   },
   module: {
     rules: [
