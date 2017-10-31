@@ -1,6 +1,8 @@
 import React from 'react'
+import {Helmet} from "react-helmet";
+
 // import {ConnectedRouter} from 'react-router-redux'
-import {Route, Switch, Redirect} from 'react-router'
+// import {Route, Switch, Redirect} from 'react-router'
 
 import HomePage from './Home'
 // import AboutPage from 'pages/About'
@@ -11,6 +13,10 @@ class PageRoutes extends React.Component {
   render () {
     return (
       <div className="max" >
+        <Helmet>
+          <title>Wooticus Prime!</title>
+          <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
         <HomePage/>
       </div>
       // {/*<ConnectedRouter history={this.props.history}>*/}
@@ -26,4 +32,4 @@ class PageRoutes extends React.Component {
   }
 }
 
-export default HomePage;
+export default PageRoutes;
