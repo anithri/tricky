@@ -1,22 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { compose, createStore, applyMiddleware, combineReducers } from 'redux';
-import { auto, reducers } from 'redux-auto';
-import { Provider } from 'react-redux';
+import {compose, createStore, applyMiddleware, combineReducers} from 'redux';
+import {auto, reducers} from 'redux-auto';
+import {Provider} from 'react-redux';
 
-const webpackModules = require.context("./store", true, /^.*\.js$/);
+const webpackModules = require.context('./store', true, /^.*\.js$/);
+
+const dtx = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__;
 
 const composeEnhancers =
-  typeof window === 'object' &&
-  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
-    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
-      // Specify extension’s options like name, actionsBlacklist, actionsCreators, serialize...
-    }) : compose;
+  (typeof window === 'object' && dtx) ? dtx({name: 'Wooticus Prime'}) : compose;
 
 class Store extends React.Component {
   state = {};
 
   componentWillMount() {
+    console.log('mounting Store');
     const enhancer = composeEnhancers(
       applyMiddleware(auto(webpackModules, webpackModules.keys()))
     );
@@ -26,8 +25,11 @@ class Store extends React.Component {
   }
 
   render() {
+    console.log('Rendering Store', this.state);
+    const {store} = this.state;
     return (
       <Provider store={this.state.store}>
+        <h1>Oops</h1>
         {this.props.children}
       </Provider>
     );
@@ -41,4 +43,12 @@ Store.propTypes = {
   ]).isRequired
 };
 
-export default Store;
+function configureStore() {
+  console.log('configuring Store');
+  const enhancer = composeEnhancers(
+    applyMiddleware(auto(webpackModules, webpackModules.keys()))
+  );
+  return createStore(combineReducers(reducers), enhancer);
+}
+
+export default configureStore;

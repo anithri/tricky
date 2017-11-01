@@ -1,15 +1,15 @@
 import React from 'react';
-
-import Store from './Store';
 import Pages from './pages';
+import Layout from './Layout';
 
 // Responsible for wiring store and router
 class App extends React.Component {
   render() {
+    console.log('rendering App');
     return (
-      <Store>
+      <Layout>
         <Pages />
-      </Store>
+      </Layout>
     );
   }
 }

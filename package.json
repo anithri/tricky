@@ -56,8 +56,11 @@
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
     "react-router-redux": "^4.0.8",
+    "react-typography": "^0.16.5",
     "redux": "^3.7.2",
     "redux-auto": "^1.8.1",
-    "typography": "^0.16.6"
+    "typography": "^0.16.6",
+    "typography-theme-funston": "^0.15.10",
+    "typography-theme-parnassus": "^0.15.10"
   }
 }

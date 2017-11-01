@@ -1,23 +1,18 @@
-import React from 'react'
-import {Helmet} from "react-helmet";
+import React from 'react';
 
 // import {ConnectedRouter} from 'react-router-redux'
 // import {Route, Switch, Redirect} from 'react-router'
 
-import HomePage from './Home'
+import HomePage from './Home';
 // import AboutPage from 'pages/About'
 // import ErrorPage from 'pages/Error'
 // import GameRoutes from 'pages/Game/routes'
 
 class PageRoutes extends React.Component {
-  render () {
+  render() {
     return (
-      <div className="max" >
-        <Helmet>
-          <title>Wooticus Prime!</title>
-          <link rel="canonical" href="http://mysite.com/example" />
-        </Helmet>
-        <HomePage/>
+      <div className="max">
+        <HomePage />
       </div>
       // {/*<ConnectedRouter history={this.props.history}>*/}
       //   {/*<Switch>*/}
@@ -28,7 +23,7 @@ class PageRoutes extends React.Component {
       //     {/*<Route component={ErrorPage}/>*/}
       //   {/*</Switch>*/}
       // {/*</ConnectedRouter>*/}
-    )
+    );
   }
 }
 
