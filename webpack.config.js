@@ -1,9 +1,9 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const path = require('path');
 const buildDir = path.resolve(process.cwd(), 'build');
-const CSSWebpackPluginConfig = new ExtractTextPlugin("application.css");
+const CSSWebpackPluginConfig = new ExtractTextPlugin('application.css');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: './src/index.html',
   filename: path.resolve(buildDir, 'index.html'),
@@ -17,8 +17,9 @@ module.exports = {
     filename: 'application.js'
   },
   devServer: {
-    contentBase: path.join(__dirname, "dist"),
+    contentBase: path.join(__dirname, 'dist'),
     compress: true,
+    historyApiFallback: true
   },
   module: {
     rules: [
