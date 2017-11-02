@@ -16,6 +16,10 @@ module.exports = {
     path: buildDir,
     filename: 'application.js'
   },
+  devServer: {
+    contentBase: path.join(__dirname, "dist"),
+    compress: true,
+  },
   module: {
     rules: [
       {
@@ -53,7 +57,7 @@ module.exports = {
                 modules: true,
                 sourceMap: true,
                 importLoaders: 1,
-                localIdentName: '[name]_[local]_[hash:base64:5]'
+                localIdentName: '[path]_[local]_[hash:base64:5]'
               }
             },
             {loader: 'postcss-loader', options: {sourceMap: true}}
@@ -64,4 +68,3 @@ module.exports = {
   },
   plugins: [HtmlWebpackPluginConfig, CSSWebpackPluginConfig]
 };
-

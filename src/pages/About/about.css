@@ -1,19 +1,18 @@
-.home {
+.about {
   composes: gridContainer from global;
   composes: max from global;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
-  grid-template-areas: "homeHeader" "homeMain";
-  background-color: var(--washed-red); /* .bg-gold */
+  grid-template-areas: "aboutHeader" "aboutMain";
+  background-color: var(--washed-green); /* .bg-gold */
 
   & > header {
-    grid-area: homeHeader;
     & > h3 {
       margin: var(--spacing-none); /* .ma0 */
     }
   }
 
   & > main {
-    grid-area: homeMain;
+    grid-area: aboutMain;
   }
 }
