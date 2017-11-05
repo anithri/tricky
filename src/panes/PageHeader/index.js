@@ -1,11 +1,11 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
-import styles from './page-header.css';
+import styles from './styles.css';
 
 class PageHeader extends React.Component {
   render() {
     return (
-      <header className={styles.header}>
+      <header className={styles.wrapper}>
         <h3 className={styles.logo}>Tricky</h3>
         <nav>
           <ul>

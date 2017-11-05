@@ -5,13 +5,14 @@ const path = require('path');
 const buildDir = path.resolve(process.cwd(), 'build');
 const CSSWebpackPluginConfig = new ExtractTextPlugin('application.css');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
-  template: './src/index.html',
+  template: './index.html',
   filename: path.resolve(buildDir, 'index.html'),
   inject: 'body'
 });
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './index.js',
+  context: path.resolve(__dirname, "src"),
   output: {
     path: buildDir,
     filename: 'application.js'
@@ -47,7 +48,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        exclude: /build|node_modules|src\/styles/,
+        exclude: /(build|node_modules|src\/styles)\//,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
@@ -58,7 +59,8 @@ module.exports = {
                 modules: true,
                 sourceMap: true,
                 importLoaders: 1,
-                localIdentName: '[path]_[local]_[hash:base64:5]'
+                camelCase: true,
+                localIdentName: '[path][local]-[hash:base64:5]'
               }
             },
             {loader: 'postcss-loader', options: {sourceMap: true}}

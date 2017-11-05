@@ -1,4 +1,4 @@
-.home {
+.wrapper {
   composes: gridContainer from global;
   composes: max from global;
   grid-template-columns: 1fr;
