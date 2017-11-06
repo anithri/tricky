@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // import {Route} from 'react-router';
-import {ConnectedRouter} from 'react-router-redux';
+import { ConnectedRouter } from 'react-router-redux';
 
 import PageRoutes from './pages/Routes';
 

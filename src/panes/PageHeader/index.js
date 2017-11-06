@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from './styles.css';
 
 class PageHeader extends React.Component {
@@ -10,13 +10,19 @@ class PageHeader extends React.Component {
         <nav>
           <ul>
             <li>
-              <NavLink exact to="/" activeClassName={styles.active}>Root@Home</NavLink>
+              <NavLink exact to="/" activeClassName={styles.active}>
+                Root@Home
+              </NavLink>
             </li>
             <li>
-              <NavLink exact to="/home" activeClassName={styles.active}>Home</NavLink>
+              <NavLink exact to="/home" activeClassName={styles.active}>
+                Home
+              </NavLink>
             </li>
             <li>
-              <NavLink exact to="/about" activeClassName={styles.active}>About</NavLink>
+              <NavLink exact to="/about" activeClassName={styles.active}>
+                About
+              </NavLink>
             </li>
           </ul>
         </nav>

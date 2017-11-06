@@ -1,0 +1,21 @@
+:root {
+  /*
+  --sample-color: var(--cpp-blue);
+  --sample-inverse: var(--gold);
+  --sample-bg: var(--cpp-blue);
+  --sample-light: var(--gold);
+  --sample-dark: var(--cpp-blue);
+
+   */
+  --info-color: var(--cpp-blue);
+  --info-inverse: var(--gold);
+
+  --danger-color: var(--red);
+  --danger-inverse: var(--near-black);
+
+  --success-color: var(--green);
+  --success-inverse: var(--near-black);
+
+  --warning-color: var(--yellow);
+  --warning-inverse: var(--near-black);
+}
