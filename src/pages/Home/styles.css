@@ -4,7 +4,8 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
   grid-template-areas: "homeHeader" "homeMain";
-  background-color: var(--washed-red); /* .bg-gold */
+  //background-color: var(--theme-light-color);
+  color: var(--theme-light-inverse);
 
   & > header {
     grid-area: homeHeader;

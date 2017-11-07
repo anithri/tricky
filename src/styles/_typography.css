@@ -1,6 +1,6 @@
 body {
     font-family: var(--sans-serif);
-    color: var(--near-black);
+    color: var(--dark-color);
     font-size: var(--font-size-4);
     line-height: var(--line-height-copy);
 }

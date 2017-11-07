@@ -1,21 +1,20 @@
+@import './_variables.css';
 :root {
-  /*
-  --sample-color: var(--cpp-blue);
-  --sample-inverse: var(--gold);
-  --sample-bg: var(--cpp-blue);
-  --sample-light: var(--gold);
-  --sample-dark: var(--cpp-blue);
+  --theme-dark-color: var(--cpp-dark-blue);
+  --theme-dark-inverse: var(--light-color);
 
-   */
+  --theme-light-color: var(--cpp-light-blue);
+  --theme-light-inverse: var(--dark-color);
+
   --info-color: var(--cpp-blue);
-  --info-inverse: var(--gold);
+  --info-inverse: var(--dark-color);
 
   --danger-color: var(--red);
-  --danger-inverse: var(--near-black);
+  --danger-inverse: var(--dark-color);
 
   --success-color: var(--green);
-  --success-inverse: var(--near-black);
+  --success-inverse: var(--dark-color);
 
-  --warning-color: var(--yellow);
-  --warning-inverse: var(--near-black);
+  --warning-color: var(--cpp-light-orange);
+  --warning-inverse: var(--dark-color);
 }

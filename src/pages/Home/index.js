@@ -9,7 +9,7 @@ class HomePage extends React.Component {
       <div className={styles.wrapper}>
         <PageHeader />
         <main>
-          <h3>Welcome to the Game</h3>
+          <h3>Welcome to the party, pal!</h3>
         </main>
       </div>
     );

@@ -1,11 +1,9 @@
-@import 'tachyons-custom/_normalize.css';
-@import 'tachyons-custom/_variables.css';
-@import 'tachyons-custom/_box-sizing.css';
-@import '_colors.css';
-@import '_variables.css';
-@import '_typography.css';
-@import '_grid.css';
-@import '_skins.css';
+@import './tachyons-custom/_normalize.css';
+@import './tachyons-custom/_box-sizing.css';
+@import './_variables.css';
+@import './_typography.css';
+@import './_grid.css';
+@import './_skins.css';
 
 html, body, #appContainer, #appWrapper, .max {
   width: 100%; /* .w-100 */
@@ -16,4 +14,7 @@ html, body, #appContainer, #appWrapper, .max {
 html, body, #appContainer {
   margin: var(--spacing-none); /* .ma0 */
   padding: var(--spacing-none); /* .pa0 */
+}
+#appContainer {
+  background-image: url("../assets/images/clouds-transparent.png"), url("../assets/images/pattern3.png"), linear-gradient(to right, var(--cpp-light-blue), var(--cpp-blue));
 }

@@ -1,3 +1,15 @@
+@import './tachyons-custom/_variables.css';
 :root {
-  --place-holder: '#000000';
+  --page-padding: var(--spacing-small);
+  --pane-padding: var(--spacing-extra-small);
+
+  --cpp-blue: #5b87ba;
+  --cpp-light-blue: #c5d4e6;
+  --cpp-dark-blue: #16549d;
+  --cpp-light-orange: #f69c00;
+  --cpp-dark-orange: #d48c00;
+  --dark-color: var(--near-black);
+  --light-color: var(--near-white);
+
+  --background-gradient: linear-gradient(to right, var(--cpp-light-blue), var(--cpp-blue));
 }

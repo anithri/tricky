@@ -4,7 +4,7 @@ function cssVar(parts, priority) {
   return `var(--${parts[0]}, ${cssVar(parts.slice(1))})`;
 }
 
-function mkSkin(main, type = 'theme', {bg, fg, border} = {}) {
+function mkSkin(main, type = 'theme', { bg, fg, border } = {}) {
   switch (type) {
     case 'theme':
       return {

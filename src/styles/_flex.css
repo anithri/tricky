@@ -1,0 +1,12 @@
+.centeringWrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+  & > * {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+  }
+}

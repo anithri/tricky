@@ -8,7 +8,9 @@ import styles from './styles.css';
 const SkinSection = ({name, skin}) => {
   return (
     <div className={styles.wrapper} style={mkSkin(name, skin)}>
-      <h3>{name} {skin}</h3>
+      <h3>
+        {name} {skin}
+      </h3>
     </div>
   );
 };

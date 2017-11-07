@@ -10,11 +10,24 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CSSWebpackPluginConfig = new ExtractTextPlugin('application.css');
 
 module.exports = {
+
   plugins: [
     CSSWebpackPluginConfig
   ],
   module: {
     rules: [
+      {
+        test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2|ico)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+              publicPath: '/'
+            }
+          }
+        ]
+      },
       {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({

@@ -2,7 +2,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const path = require('path');
-const buildDir = path.resolve(process.cwd(), 'build');
+const srcDir = path.resolve(process.cwd(), 'src');
+const buildDir = path.resolve(process.cwd(), 'build/');
 const CSSWebpackPluginConfig = new ExtractTextPlugin('application.css');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: './index.html',
@@ -12,14 +13,28 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 
 module.exports = {
   entry: './index.js',
-  context: path.resolve(__dirname, "src"),
+  context: srcDir,
+  resolve: {
+    alias: {
+      assets: path.resolve(srcDir, 'assets'),
+      components: path.resolve(srcDir, 'components'),
+      containers: path.resolve(srcDir, 'containers'),
+      elements: path.resolve(srcDir, 'elements'),
+      images: path.resolve(srcDir, 'assets/images'),
+      pages: path.resolve(srcDir, 'pages'),
+      panes: path.resolve(srcDir, 'panes'),
+      store: path.resolve(srcDir, 'store'),
+      styles: path.resolve(srcDir, 'styles'),
+      utils: path.resolve(srcDir, 'utils')
+    }
+  },
   output: {
     path: buildDir,
     filename: 'application.js'
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
-    compress: true,
+    compress: false,
     historyApiFallback: true
   },
   module: {
@@ -30,16 +45,29 @@ module.exports = {
         exclude: /build|node_modules/
       },
       {
+        test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2|ico)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]',
+              publicPath: '/'
+            }
+          }
+        ]
+      },
+      {
         test: /styles\/.*\.css$/,
         exclude: /build|node_modules/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
+            'style-loader',
             {
               loader: 'css-loader',
               options: {
                 sourceMap: true,
-                importLoaders: 1,
+                importLoaders: 1
               }
             },
             {loader: 'postcss-loader', options: {sourceMap: true}}

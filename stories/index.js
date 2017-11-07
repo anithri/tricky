@@ -7,6 +7,7 @@ import {linkTo} from '@storybook/addon-links';
 import Skin from '../src/elements/Skin';
 
 import {Welcome} from '@storybook/react/demo';
+import '../src/styles/_skins.css';
 
 const styles = {
   textAlign: 'center',
@@ -24,6 +25,12 @@ addDecorator(CenterDecorator);
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
 storiesOf('skins', module)
+  .add('Dark Theme', () => (
+    <Skin name="theme-dark" />
+  ))
+  .add('Light Theme', () => (
+    <Skin name="theme-light" />
+  ))
   .add('Info', () => (
     <Skin name="info" />
   ))
