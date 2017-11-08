@@ -5,8 +5,7 @@
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  background-color: var(--theme-dark-color);
-  background-image: url('../../assets/images/dotnoise-light-grey.png');
+  background: var(--theme-dark-color) url('../../assets/images/dotnoise-light-grey.png');
   color: var(--theme-dark-inverse);
 
   & .logo {
@@ -14,6 +13,7 @@
     flex: 2 1 auto;
     align-self: center;
     font-size: var(--font-size-3); /* .f3 */
+    color: var(--cpp-light-orange);
   }
 
   & nav {
@@ -39,11 +39,15 @@
       list-style-type: none;
       flex: 0 1 auto;
       margin-bottom: var(--spacing-none); /* .pb0 */
+
+      & a {
+        text-decoration: none;
+      }
     }
   }
 }
 .active {
-  background-color: var(--light-color); /* .dark-color */
+  background-color: var(--cpp-light-orange); /* .dark-color */
   color: var(--dark-color); /* .bg-light-color */
   border-radius: var(--border-radius-3); /* .br3 */
   padding: var(--spacing-extra-small); /* .pa1 */

@@ -11,17 +11,17 @@ class PageHeader extends React.Component {
           <ul>
             <li>
               <NavLink exact to="/" activeClassName={styles.active}>
-                Root@Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink exact to="/home" activeClassName={styles.active}>
                 Home
               </NavLink>
             </li>
             <li>
               <NavLink exact to="/about" activeClassName={styles.active}>
                 About
+              </NavLink>
+            </li>
+            <li>
+              <NavLink exact to="/fake" activeClassName={styles.active}>
+                Error
               </NavLink>
             </li>
           </ul>

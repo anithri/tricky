@@ -3,6 +3,7 @@
 @import './_variables.css';
 @import './_typography.css';
 @import './_grid.css';
+@import './_flex.css';
 @import './_skins.css';
 
 html, body, #appContainer, #appWrapper, .max {
@@ -16,5 +17,5 @@ html, body, #appContainer {
   padding: var(--spacing-none); /* .pa0 */
 }
 #appContainer {
-  background-image: url("../assets/images/clouds-transparent.png"), url("../assets/images/pattern3.png"), linear-gradient(to right, var(--cpp-light-blue), var(--cpp-blue));
+  background-image: url("../assets/images/pattern3.png"), url("../assets/images/clouds-transparent.png"), var(--background-gradient);
 }

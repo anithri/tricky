@@ -1,21 +1,23 @@
 .wrapper {
-  composes: gridContainer from global;
+  composes: centeringWrapper from global;
   composes: max from global;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr;
-  grid-template-areas: "homeHeader" "homeMain";
-  //background-color: var(--washed-red); /* .bg-gold */
+  background-color: var(--cpp-dark-blue);
+  color: var(--cpp-light-orange);
 
-  & > header {
-    grid-area: homeHeader;
-    & > h3 {
-      margin: var(--spacing-none); /* .ma0 */
-    }
+  & > * {
+    flex: 0 1 auto;
   }
 
-  & > main {
-    grid-area: homeMain;
+  & h3 {
+    font-size: var(--font-size-1); /* .f2 */
 
+  }
 
+  & p {
+    text-align: center; /* .tc */
+  }
+
+  & a {
+    text-decoration: none;
   }
 }

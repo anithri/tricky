@@ -3,5 +3,6 @@
   grid-gap: var(--page-padding);
   & > * {
     padding: var(--pane-padding);
+    padding-left: var(--spacing-small); /* .pl3 */
   }
 }
