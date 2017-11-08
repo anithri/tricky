@@ -1,0 +1,40 @@
+form {
+  margin: var(--spacing-none) !important; /* .ma0 */
+
+  & label {
+    display: block; /* .db */
+    font-size: var(--font-size-5); /* .f4 */
+    padding-top: var(--spacing-small); /* .pv2 */
+    font-weight: 700; /* .fw7 */
+  }
+
+  & input {
+    display: block; /* .db */
+    border-radius: var(--border-radius-2); /* .br2 */
+  }
+
+  & input.untouched:required {
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--warning-color);
+  }
+
+  & input:focus {
+    border-style: solid; /* .ba */
+    border-width: 2px;
+    border-color: var(--info-color);
+  }
+
+  & input.touched:valid {
+    border-style: solid; /* .ba */
+    border-width: 2px;
+    border-color: var(--success-color);
+  }
+
+  & input.touched:invalid {
+    border-style: solid; /* .ba */
+    border-width: 2px;
+    border-color: var(--danger-color);
+  }
+
+}

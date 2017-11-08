@@ -1,0 +1,50 @@
+.wrapper {
+  composes: centeringWrapper from global;
+  composes: max from global;
+
+  & > * {
+    flex: 0 1 auto;
+    border-style: solid; /* .ba */
+    border-width: 1px;
+    background-color: var(--cpp-dark-orange-70); /* .bg-black-20 */
+    border-radius: var(--border-radius-3); /* .br3 */
+  }
+
+  & header {
+    background-color: var(--cpp-dark-blue); /* .bg-black-20 */
+    color: var(--light-color);
+    border-top-left-radius: var(--border-radius-3); /* .br--top */
+    border-top-right-radius: var(--border-radius-3);
+  }
+
+  & footer {
+    background-color: var(--cpp-dark-blue); /* .bg-black-20 */
+    color: var(--light-color);
+    border-bottom-left-radius: var(--border-radius-3); /* .br--top */
+    border-bottom-right-radius: var(--border-radius-3);
+  }
+
+  & h3 {
+    padding: var(--spacing-extra-small); /* .pa1 */
+    padding-bottom: var(--spacing-small); /* .pa2 */
+    font-size: var(--font-size-3); /* .f2 */
+    margin-bottom: var(--spacing-none); /* .mb0 */
+    text-align: center; /* .tc */
+  }
+
+  & footer {
+    text-align: center; /* .tc */
+    font-size: var(--font-size-4); /* .f4 */
+  }
+
+  & a {
+    text-decoration: none;
+  }
+
+}
+
+.formWrapper {
+  composes: max from global;
+  composes: centeringWrapper from global;
+  padding: var(--spacing-medium); /* .pa3 */
+}

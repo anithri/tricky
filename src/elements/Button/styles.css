@@ -1,0 +1,46 @@
+.button {
+  font-size: var(--font-size-4); /* .f6 */
+  border-radius: var(--border-radius-2); /* .br3 */
+  padding-top: var(--spacing-extra-small); /* .pv2 */
+  padding-bottom: var(--spacing-extra-small);
+  padding-left: var(--spacing-small); /* .ph3 */
+  padding-right: var(--spacing-small);
+  margin-bottom: var(--spacing-small); /* .mb2 */
+  display: inline-block; /* .dib */
+  line-height: var(--line-height-solid); /* .lh-copy */
+  border-style: none; /* .ba */
+}
+
+.button:hover {
+  color: inherit;
+  cursor: pointer;
+}
+
+.small {
+  font-size: var(--font-size-6); /* .f6 */
+}
+
+.large {
+  font-size: var(--font-size-3); /* .f6 */
+}
+
+.info {
+  background-color: var(--info-color);
+  color: var(--info-inverse);
+}
+
+.success {
+  background-color: var(--success-color);
+  color: var(--success-inverse);
+}
+
+.danger {
+  background-color: var(--danger-color);
+  color: var(--danger-inverse);
+}
+
+.warning {
+  background-color: var(--warning-color);
+  color: var(--warning-inverse);
+}
+

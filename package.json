@@ -11,14 +11,9 @@
     "test": "jest",
     "start": "webpack-dev-server",
     "pretty": "prettier --write --single-quote \"{src,test}/**/*.js\" ",
-    "lint": "eslint ./src ./test",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "lint": "eslint ./src ./test"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^3.2.14",
-    "@storybook/addon-links": "^3.2.14",
-    "@storybook/react": "^3.2.14",
     "babel-core": "^6.26.0",
     "babel-env": "^2.4.1",
     "babel-eslint": "^8.0.1",

@@ -20,6 +20,11 @@ class PageHeader extends React.Component {
               </NavLink>
             </li>
             <li>
+              <NavLink exact to="/login">
+                Login
+              </NavLink>
+            </li>
+            <li>
               <NavLink exact to="/fake" activeClassName={styles.active}>
                 Error
               </NavLink>

@@ -1,10 +1,12 @@
 @import './tachyons-custom/_normalize.css';
 @import './tachyons-custom/_box-sizing.css';
+@import './tachyons-custom/_hovers.css';
 @import './_variables.css';
-@import './_typography.css';
-@import './_grid.css';
 @import './_flex.css';
+@import './_forms.css';
+@import './_grid.css';
 @import './_skins.css';
+@import './_typography.css';
 
 html, body, #appContainer, #appWrapper, .max {
   width: 100%; /* .w-100 */

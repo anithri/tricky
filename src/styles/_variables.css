@@ -11,5 +11,8 @@
   --dark-color: var(--near-black);
   --light-color: var(--near-white);
 
+  --cpp-dark-blue-70: #16549db2;
+  --cpp-dark-orange-70: #f69c00b2;
+
   --background-gradient: linear-gradient(to right, var(--cpp-light-blue), var(--cpp-blue));
 }
